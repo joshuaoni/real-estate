@@ -69,11 +69,6 @@ export const Details = ({list, propertyId, settingList, addingTenant, editTenant
                         onChange={(e)=>{
                             setEditedName(e.target.value);
                         }}
-                        onBlur={()=>{
-                            var editForm = document.querySelector('.edit-form');
-                            editForm?.classList.add('none');
-                            setEditedName('');
-                        }}
                     />
                     <Button onClick={handleEdit} size="large" variant="contained" endIcon={<SaveIcon />}>Save</Button>
                 </form>
