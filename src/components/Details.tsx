@@ -21,11 +21,6 @@ export const Details = ({list, propertyId, settingList, addingTenant, editTenant
 
     const handleDelete = (idx: number) =>  {
         settingList(idx);
-        console.log(list[propertyId-1])
-        if (list[propertyId-1].tenants.length <= 1) {
-            var error = document.querySelector('.error');
-            error?.classList.remove('none');
-        }
     }
 
     const handleSubmit = async (e: React.SyntheticEvent) => {
@@ -56,9 +51,6 @@ export const Details = ({list, propertyId, settingList, addingTenant, editTenant
                 </Typography>
                 <Typography variant="body2" gutterBottom component="div" className='heading'>
                     {list[propertyId-1].location}
-                </Typography>
-                <Typography variant="h6" gutterBottom component="div" className='none error'>
-                    No residents
                 </Typography>
                 <Typography variant="subtitle1" gutterBottom component="div">
                     Tenants :

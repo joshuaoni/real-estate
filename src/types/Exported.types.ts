@@ -6,7 +6,7 @@ type ReusableProps = {
 }
 
 type PropertyProps = {
-    list: ReusableProps[]
+    list: ReusableProps[],
     settingId: (id:number) => void
 }
 
