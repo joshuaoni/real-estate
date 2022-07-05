@@ -1,0 +1,105 @@
+
+section {
+    padding: 3rem;
+}
+
+.properties {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.5);
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+.list-item {
+    border-bottom: 0.5px solid rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.list-item:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.details {
+    width: 100%;
+    padding: 10px;
+}
+
+.none {
+    display: none;
+}
+
+.text input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.text + button {
+    background: #020243 !important;
+}
+
+.edit {
+    margin-right: 0.5rem !important;
+}
+
+.heading {
+    margin-bottom: 4rem !important;
+}
+
+.details-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bold {
+    font-weight: 700 !important;
+}
+
+.label {
+    width: 100%;
+    padding: 10px 0;
+    background: #020243;
+    color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    padding: 15px 5px;
+    text-align: center;
+    border-radius: 3px;
+    font-weight: 700 !important;
+}
+
+.properties span {
+    font-weight: 600;
+}
+
+.error {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.min-label {
+    display: none;
+}
+
+@media screen and (max-width: 56.2em) {
+    .min-label {
+        display: block;
+    }
+
+    .max-label {
+        display: none;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    .edit {
+        margin-right: 0rem !important;
+    }
+}
